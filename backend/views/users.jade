@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 Kullanıcı Listesi
+  table(border="1", cellpadding="5", cellspacing="0")
+    thead
+      tr
+        th ID
+        th Ad
+        th Email
+        th Rol
+        th Aktif
+        th Şifre
+        th Oluşturulma
+        th Güncellenme
+        th Silinme
+    tbody
+      each user in users
+        tr
+          td= user.id
+          td= user.name
+          td= user.email
+          td= user.role
+          td= user.is_active
+          td= user.password
+          td= user.created_at
+          td= user.updated_at
+          td= user.deleted_at

@@ -1,0 +1,9 @@
+# Tüm dosyalar için otomatik satır sonu
+* text=auto
+
+# Belirli dosya tipleri için LF
+*.js text eol=lf
+*.css text eol=lf
+*.jade text eol=lf
+*.json text eol=lf
+*.md text eol=lf
