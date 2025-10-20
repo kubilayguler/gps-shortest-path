@@ -6,6 +6,20 @@ A full-stack web application for optimizing delivery routes using advanced Trave
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 ![PostgreSQL](https://img.shields.io/badge/postgresql-14%2B-blue.svg)
 
+## 🚀 Quick Start - Demo Users
+
+After running the application with Docker, you can login with these pre-configured demo accounts:
+
+| Role | Email | Password | Description |
+|------|-------|----------|-------------|
+| 👑 **Admin** | `admin@demo.com` | `demo123` | Full system access, manage all companies and users |
+| 👔 **Manager** | `manager@demo.com` | `demo123` | Company-level management, orders and employees |
+| 👤 **Employee** | `employee@demo.com` | `demo123` | Create and manage warehouse orders |
+| 🚗 **Driver** | `driver@demo.com` | `demo123` | View assigned orders and calculate routes |
+
+**Demo Company**: Demo Delivery Company (Konya, Turkey)  
+**Demo Warehouse**: Central Warehouse (Meram, Konya)
+
 ## ✨ Features
 
 ### 🎯 Route Optimization

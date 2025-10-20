@@ -13,15 +13,13 @@ const sequelize = new Sequelize(
   }
 );
 
-(async () => {
-  try {
-    await sequelize.authenticate();
+// Test connection
+sequelize.authenticate()
+  .then(() => {
     console.log('DB connected!');
-    // sync removed - use migrations or seed script instead
-    console.log('Database ready!');
-  } catch (err) {
+  })
+  .catch((err) => {
     console.error('DB connection error:', err);
-  }
-})();
+  });
 
 module.exports = sequelize;

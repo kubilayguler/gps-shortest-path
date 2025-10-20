@@ -3,6 +3,9 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
+// Initialize database and models
+const { sequelize } = require('./models');
+
 const app = express();
 
 app.use(express.json());
@@ -38,9 +41,25 @@ app.use((req, res) => {
 
 const PORT = process.env.PORT;
 
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// Sync database and start server
+(async () => {
+  try {
+    // Sync models with database (creates tables if they don't exist)
+    await sequelize.sync({ alter: false, force: false });
+    console.log('Database tables synced!');
+    
+    // Seed initial data
+    const seedDatabase = require('./utils/seedDatabase');
+    await seedDatabase();
+    
+    // Start server
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  } catch (err) {
+    console.error('Failed to start server:', err);
+    process.exit(1);
+  }
+})();
 
 module.exports = app;
