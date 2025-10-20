@@ -8,6 +8,8 @@ A full-stack web application for optimizing delivery routes using advanced Trave
 
 ## Images
 <img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/ce7bd6e5-524d-4b17-8947-aabe073e472a" />
+<img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/773f42dc-0bd1-4ee1-ae39-c85b7640f07b" />
+
 <img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/4425d995-e343-4614-ba70-641272e704cd" />
 <img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/8bebb8e5-266c-4e6d-af98-a03e8ac2e1f6" />
 
