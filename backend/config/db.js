@@ -17,6 +17,8 @@ const sequelize = new Sequelize(
   try {
     await sequelize.authenticate();
     console.log('DB connected!');
+    // sync removed - use migrations or seed script instead
+    console.log('Database ready!');
   } catch (err) {
     console.error('DB connection error:', err);
   }

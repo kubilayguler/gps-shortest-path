@@ -1,10 +1,10 @@
-// CSS modules için type declaration
+// CSS modules type declaration
 declare module '*.css' {
     const content: { [className: string]: string };
     export default content;
 }
 
-// Leaflet CSS için type declaration
+// Leaflet CSS type declaration
 declare module 'leaflet/dist/leaflet.css';
 
 // Global types

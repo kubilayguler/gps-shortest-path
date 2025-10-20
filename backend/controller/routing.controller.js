@@ -1,4 +1,4 @@
-const RoutingService = require('../services/routing.service');
+const RoutingService = require('../services/routing.service.js');
 
 class RoutingController {
   static async getRoute(req, res) {

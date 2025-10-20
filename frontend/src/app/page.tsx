@@ -1,16 +1,26 @@
-'use client'
+'use client';
 
-import dynamic from 'next/dynamic'
-
-const LeafletMap = dynamic(() => import('../components/LeafletMap'), { ssr: false })
+import { useAuth } from '@/contexts/AuthContext';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function Page() {
-  return (
-    <div className="container mx-auto p-4">
+  const { isAuthenticated, isLoading } = useAuth();
+  const router = useRouter();
 
-      <div className="w-2/3 mx-auto h-[600px] border border-gray-300 rounded-lg overflow-hidden shadow-lg">
-        <LeafletMap className="h-full" />
-      </div>
+  useEffect(() => {
+    if (!isLoading) {
+      if (isAuthenticated) {
+        router.push('/dashboard');
+      } else {
+        router.push('/login');
+      }
+    }
+  }, [isAuthenticated, isLoading, router]);
+
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="text-xl">Redirecting...</div>
     </div>
-  )
+  );
 }
