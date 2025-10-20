@@ -1,6 +1,7 @@
 const { Order, Company, Warehouse, User } = require('../models');
 const geocodingService = require('../services/geocoding.service');
 const { Sequelize } = require('sequelize');
+const crypto = require('crypto');
 
 class OrderController {
     static async getOrders(req, res) {
@@ -326,8 +327,7 @@ class OrderController {
             }
 
             // Generate delivery group information
-            const { v4: uuidv4 } = require('uuid');
-            const deliveryGroupId = uuidv4();
+            const deliveryGroupId = crypto.randomUUID();
             
             // Find the next delivery number for this driver
             const maxGroup = await Order.findOne({

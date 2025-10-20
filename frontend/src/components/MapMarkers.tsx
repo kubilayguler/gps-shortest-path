@@ -152,7 +152,7 @@ const MapMarkers: React.FC<MapMarkersProps> = ({
                                 direction="top"
                                 offset={[0, -35]}
                                 opacity={0.95}
-                                permanent={true}
+                                permanent={isCurrent}
                                 className="custom-tooltip"
                             >
                                 <div className="font-semibold text-sm" style={{ color: markerColor }}>
