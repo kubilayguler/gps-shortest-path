@@ -6,6 +6,12 @@ A full-stack web application for optimizing delivery routes using advanced Trave
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 ![PostgreSQL](https://img.shields.io/badge/postgresql-14%2B-blue.svg)
 
+## Images
+<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/ce7bd6e5-524d-4b17-8947-aabe073e472a" />
+<img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/4425d995-e343-4614-ba70-641272e704cd" />
+<img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/8bebb8e5-266c-4e6d-af98-a03e8ac2e1f6" />
+
+
 ## Quick Start - Demo Users
 
 After running the application with Docker, you can login with these pre-configured demo accounts:
