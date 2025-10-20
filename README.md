@@ -22,36 +22,36 @@ After running the application with Docker, you can login with these pre-configur
 
 ## ✨ Features
 
-### 🎯 Route Optimization
+### Route Optimization
 - **Advanced TSP Algorithm**: Multi-start approach combining Nearest Neighbor, Farthest Insertion, and 2-Opt optimization
 - **Smart Routing**: Eliminates unnecessary back-and-forth travel
 - **Multi-Stop Planning**: Efficiently handle routes with dozens of delivery points
 - **Real-time Calculation**: Fast route computation using OSRM (Open Source Routing Machine)
 
-### 📍 Delivery Management
+### Delivery Management
 - **Delivery Grouping**: Organize orders into delivery batches (Delivery 1, Delivery 2, etc.)
 - **Status Tracking**: Monitor orders through their lifecycle (Pending → Assigned → In Transit → Delivered)
 - **Driver Assignment**: Assign specific drivers to orders and track their progress
 - **Progress Monitoring**: Real-time updates on delivery completion
 
-### 🗺️ Interactive Maps
+### Interactive Maps
 - **Dynamic Centering**: Map automatically focuses on current delivery location
 - **Route Visualization**: Clear display of optimized paths with waypoints
 - **Progress Indicators**: Visual representation of completed vs remaining stops
 - **Warehouse Markers**: Clearly marked starting points
 
-### 👥 Role-Based Access Control
+### Role-Based Access Control
 - **Admin**: Full system access, user and company management
 - **Manager**: Company-level order management and analytics
 - **Employee**: Warehouse-specific order creation
 - **Driver**: Personal delivery tracking and route access
 
-### 🏢 Multi-tenant Support
+### Multi-tenant Support
 - **Company Management**: Support for multiple delivery companies
 - **Warehouse Coordination**: Multiple warehouses per company
 - **Isolated Data**: Company-specific data separation
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Runtime**: Node.js (v18+)
@@ -75,14 +75,14 @@ After running the application with Docker, you can login with these pre-configur
 - **Environment**: .env configuration
 - **Version Control**: Git
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Node.js**: v18.0.0 or higher
 - **PostgreSQL**: v14 or higher
 - **npm**: v9.0.0 or higher (or yarn/pnpm)
 - **Docker**: Optional, for containerized deployment
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -162,7 +162,7 @@ npm run dev
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:5000/api
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Using Docker Compose (Recommended)
 
@@ -713,7 +713,7 @@ Calculate optimized multi-stop route (TSP algorithm).
 
 ---
 
-## 🔐 Authentication & Authorization
+## Authentication & Authorization
 
 ### Authentication Flow
 1. User logs in via `/api/auth/login`
@@ -845,19 +845,19 @@ CREATE INDEX idx_orders_driver_group ON orders(driver_id, delivery_group_name);
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Author
+## Author
 
 **Kubilay Güler** - [@kubilayguler](https://github.com/kubilayguler)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **OpenStreetMap** - Map data and routing
 - **OSRM Project** - Open-source routing engine
